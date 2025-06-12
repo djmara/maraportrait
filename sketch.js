@@ -3,7 +3,7 @@ let img;
 // CONFIG
 let scaleFactor = 2.5;
 let depth = 200;
-let jitterAmount = 2;
+let jitterAmount = 1;
 let step = 1;
 
 
@@ -34,7 +34,7 @@ function draw() {
   let oscillation = sin(frameCount * 0.01) * PI / 8;
 
   stroke(0, 255, 255);
-  strokeWeight(0.1);
+  strokeWeight(0.05);
   noFill();
 
   rotateX(rotX);
@@ -52,7 +52,7 @@ function draw() {
       let bVal = img.pixels[i + 2];
       let b = (r + g + bVal) / 3;
 
-     if (b > 110) continue;
+     if (b > 150) continue;
 
       let z = pow(map(b, 0, 255, 1, 0), 5) * depth;
       let jx = map(noise(x * 0.08, y * 0.08, t), 0, 1, -jitterAmount, jitterAmount);
