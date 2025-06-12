@@ -4,7 +4,7 @@ let img;
 let scaleFactor = 2.5;
 let depth = 150;
 let jitterAmount = 5;
-let step = 2;
+let step = 5;
 
 
 
