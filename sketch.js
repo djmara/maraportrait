@@ -52,7 +52,7 @@ function draw() {
       let bVal = img.pixels[i + 2];
       let b = (r + g + bVal) / 3;
 
-     if (b > 220) continue;
+     if (b > 200) continue;
 
       let z = pow(map(b, 0, 255, 1, 0), 1.2) * depth;
       let jx = map(noise(x * 0.08, y * 0.08, t), 0, 1, -jitterAmount, jitterAmount);
