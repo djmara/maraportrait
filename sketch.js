@@ -34,7 +34,7 @@ function draw() {
   let oscillation = sin(frameCount * 0.01) * PI / 8;
 
   stroke(0, 255, 255);
-  strokeWeight(1);
+  strokeWeight(0.1);
   noFill();
 
   rotateX(rotX);
