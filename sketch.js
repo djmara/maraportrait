@@ -16,7 +16,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1200, 1080, WEBGL);
+  createCanvas(1920, 1080, WEBGL);
   frameRate(60);
   img.resize(int(width / scaleFactor), int(height / scaleFactor));
   img.loadPixels(); // Load once — now we'll use pixels[] directly
