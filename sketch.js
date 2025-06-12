@@ -1,10 +1,10 @@
 let img;
 
 // CONFIG
-let scaleFactor = 2.5;
+let scaleFactor = 1;
 let depth = 200;
 let jitterAmount = 1;
-let step = 1;
+let step = 2;
 
 
 
