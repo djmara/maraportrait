@@ -2,7 +2,7 @@ let img;
 
 // CONFIG
 let scaleFactor = 2.5;
-let depth = 400;
+let depth = 250;
 let jitterAmount = 3;
 let step = 1;
 
