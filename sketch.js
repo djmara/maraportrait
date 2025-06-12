@@ -1,7 +1,7 @@
 let img;
 
 // CONFIG
-let scaleFactor = 1;
+let scaleFactor = 2.5;
 let depth = 200;
 let jitterAmount = 1;
 let step = 2;
@@ -54,7 +54,7 @@ function draw() {
 
      if (b > 150) continue;
 
-      let z = pow(map(b, 0, 255, 1, 0), 2) * depth;
+      let z = pow(map(b, 0, 255, 1, 0), 1.2) * depth;
       let jx = map(noise(x * 0.08, y * 0.08, t), 0, 1, -jitterAmount, jitterAmount);
       let jy = map(noise(y * 0.08, x * 0.08, t + 100), 0, 1, -jitterAmount, jitterAmount);
       let jz = map(noise(x * 0.08, y * 0.08, t + 200), 0, 1, -jitterAmount, jitterAmount);
