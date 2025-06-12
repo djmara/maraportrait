@@ -4,7 +4,10 @@ let img;
 let scaleFactor = 2.5;
 let depth = 150;
 let jitterAmount = 2;
-let step = 3;
+let step = 2;
+
+
+
 
 // ROTATION
 let rotX = 0;
@@ -49,9 +52,9 @@ function draw() {
       let bVal = img.pixels[i + 2];
       let b = (r + g + bVal) / 3;
 
-      if (b > 200) continue;
+     if (b > 170) continue;
 
-      let z = pow(map(b, 0, 255, 1, 0), 1.5) * depth;
+      let z = pow(map(b, 0, 255, 1, 0), 1.2) * depth;
       let jx = map(noise(x * 0.08, y * 0.08, t), 0, 1, -jitterAmount, jitterAmount);
       let jy = map(noise(y * 0.08, x * 0.08, t + 100), 0, 1, -jitterAmount, jitterAmount);
       let jz = map(noise(x * 0.08, y * 0.08, t + 200), 0, 1, -jitterAmount, jitterAmount);
