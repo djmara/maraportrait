@@ -4,7 +4,7 @@ let img;
 let scaleFactor = 2.5;
 let depth = 150;
 let jitterAmount = 2;
-let step = 2;
+let step = 1;
 
 
 
@@ -52,7 +52,7 @@ function draw() {
       let bVal = img.pixels[i + 2];
       let b = (r + g + bVal) / 3;
 
-     if (b > 170) continue;
+     if (b > 220) continue;
 
       let z = pow(map(b, 0, 255, 1, 0), 1.2) * depth;
       let jx = map(noise(x * 0.08, y * 0.08, t), 0, 1, -jitterAmount, jitterAmount);
